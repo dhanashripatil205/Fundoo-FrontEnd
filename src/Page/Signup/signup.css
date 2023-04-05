@@ -1,0 +1,89 @@
+.signupcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 52vw;
+  height: 95vh;
+  margin: auto;
+  margin-top: 1.2%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding-left: 40px;
+  padding-right: 10px;
+  
+}
+
+.google1 {
+  padding-right: 90%;
+  font-size: x-large;
+  color: blue;
+}
+
+.createnew {
+  padding-right: 31.6%;
+
+  margin-top: 10px;
+  font-size: x-large;
+}
+
+.continue {
+  padding-right: 67%;
+  margin-top: 10px;
+  font-size: medium;
+  font: bold;
+}
+
+.firstcontainer {
+  height: 80%;
+  width: 70%;
+}
+
+.secondcontainer {
+  width: 30%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.inputbox1,
+.inputbox2 {
+  display: flex;
+  margin-top: 18px;
+}
+
+.inputtextfield3 {
+  margin-top: 3%;
+}
+
+.username {
+  width: 100%;
+ 
+}
+
+.inputtextfield2,
+.inputtextfield5 {
+  margin-left: 20px;
+}
+
+.showpassword {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.signinstead {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35%;
+  margin-left: 0.1%;
+  margin-top: 10%;
+  color:blue
+
+}
+
+.showpassword {
+  margin-top: 2%;
+}
+
+.check {
+  margin-left: -2.1%;
+}

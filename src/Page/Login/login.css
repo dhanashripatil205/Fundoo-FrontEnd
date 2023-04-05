@@ -1,0 +1,61 @@
+.maincontainer {
+  width: 35vw;
+  height: 90vh;
+  margin: auto;
+  margin-top: 2.5%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.google,
+.gmail,
+.signin,
+.createaccount {
+  padding: 10px;
+}
+
+.google {
+  font-size: x-large;
+  padding-top: 10%;
+}
+
+.signin {
+  font-size: x-large;
+  font: bolder;
+}
+
+.gmail {
+  margin-bottom: 20px;
+}
+.createaccount {
+  display: flex;
+  justify-content: space-between;
+  font-size: bold;
+}
+
+.paragraph {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.bothinputfield {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.password {
+  margin-top: 5%;
+}
+
+.textfield1,
+.textfield2 {
+  width: 90%;
+}
+
+.learn,.createaccount,.google{
+    color: blue;
+    font-size: bold;
+}
