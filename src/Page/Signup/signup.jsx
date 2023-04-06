@@ -12,7 +12,7 @@ const passwordRegex =
 const firstnameRegex = /^[A-Z]{1}[a-z]{2,}$/;
 const lastnameRegex = /^[A-Z]{1}[a-z]{2,}$/;
 
-export default function Signup() {
+export default function SignupNew() {
   const [signObj, setSignObj] = useState({
     name: "",
     lastname: "",
@@ -21,7 +21,7 @@ export default function Signup() {
     confirmpassword: "",
   });
 
-  const [validityObj, setValidityObj] = useState({
+  const [regexObj, setRegexObj] = useState({
     NameHelper: "",
     isNameInvalid: false,
     lastNameHelper: "",
@@ -34,7 +34,6 @@ export default function Signup() {
     isConfirmPasswordInvalid: false,
   });
 
-  const navigate = useNavigate;
 
   const onfirstnameChange = (event) => {
     setSignObj((prev) => {
@@ -74,7 +73,7 @@ export default function Signup() {
     console.log(signObj);
 
     if (!nameValid) {
-      setValidityObj((prev) => {
+      setRegexObj((prev) => {
         return {
           ...prev,
           isNameInvalid: true,
@@ -82,13 +81,13 @@ export default function Signup() {
         };
       });
     } else {
-      setValidityObj((prev) => {
+      setRegexObj((prev) => {
         return { ...prev, isNameInvalid: false, NameHelper: "" };
       });
     }
 
     if (!lastnameValid) {
-      setValidityObj((prev) => {
+      setRegexObj((prev) => {
         return {
           ...prev,
           isLastNameInvalid: true,
@@ -96,23 +95,23 @@ export default function Signup() {
         };
       });
     } else {
-      setValidityObj((prev) => {
+      setRegexObj((prev) => {
         return { ...prev, isLastNameInvalid: false, lastNameHelper: "" };
       });
     }
 
     if (!isEmailValid) {
-      setValidityObj((prev) => {
+      setRegexObj((prev) => {
         return { ...prev, isEmailInvalid: true, emailHelper: "Invalid email" };
       });
     } else {
-      setValidityObj((prev) => {
+      setRegexObj((prev) => {
         return { ...prev, isEmailInvalid: false, emailHelper: "" };
       });
     }
 
     if (!passwordValid) {
-      setValidityObj((prev) => {
+      setRegexObj((prev) => {
         return {
           ...prev,
           isPasswordInvalid: true,
@@ -120,13 +119,13 @@ export default function Signup() {
         };
       });
     } else {
-      setValidityObj((prev) => {
+      setRegexObj((prev) => {
         return { ...prev, isPasswordInvalid: false, passwordHelper: "" };
       });
     }
 
     if (passwordValid && signObj.password !== signObj.confirmpassword) {
-      setValidityObj((prev) => {
+      setRegexObj((prev) => {
         return {
           ...prev,
           isConfirmPasswordInvalid: true,
@@ -134,7 +133,7 @@ export default function Signup() {
         };
       });
     } else {
-      setValidityObj((prev) => {
+      setRegexObj((prev) => {
         return {
           ...prev,
           isConfirmPasswordInvalid: false,
@@ -154,9 +153,7 @@ export default function Signup() {
     }
   }
 
-  const goToLogin = (event) => {
-    navigate("/");
-  };
+ 
 
   return (
     <div className="signupcontainer">
@@ -171,8 +168,8 @@ export default function Signup() {
               className="firstname"
               label="First name"
               variant="outlined"
-              error={validityObj.isFirstNameInvalid}
-              helperText={validityObj.firstNameHelper}
+              error={regexObj.isNameInvalid}
+              helperText={regexObj.NameHelper}
               onChange={onfirstnameChange}
             />
           </div>
@@ -182,8 +179,8 @@ export default function Signup() {
               className="lastname"
               label="Last name"
               variant="outlined"
-              error={validityObj.isLastNameInvalid}
-              helperText={validityObj.firstNameHelper}
+              error={regexObj.isLastNameInvalid}
+              helperText={regexObj.NameHelper}
               onChange={onlastnameChange}
             />
           </div>
@@ -195,8 +192,8 @@ export default function Signup() {
             label="Username"
             variant="outlined"
             //helperText="You can use letters, numbers & periods"
-            error={validityObj.isEmailInvalid}
-            helperText={validityObj.emailHelper}
+            error={regexObj.isEmailInvalid}
+            helperText={regexObj.emailHelper}
             onChange={onEmailChange}
           />
         </div>
@@ -207,8 +204,8 @@ export default function Signup() {
               className="password"
               label="Password"
               variant="outlined"
-              error={validityObj.isPasswordInvalid}
-              helperText={validityObj.passwordHelper}
+              error={regexObj.isPasswordInvalid}
+              helperText={regexObj.passwordHelper}
               onChange={onPasswordChange}
             />
           </div>
@@ -218,8 +215,8 @@ export default function Signup() {
               className="confirm"
               label="Confirm Password"
               variant="outlined"
-              error={validityObj.isConfirmPasswordInvalid}
-              helperText={validityObj.confirmPasswordHelper}
+              error={regexObj.isConfirmPasswordInvalid}
+              helperText={regexObj.confirmPasswordHelper}
               onChange={onconfirmpasswordChange}
             />
           </div>
@@ -233,7 +230,7 @@ export default function Signup() {
         </div>
 
         <div className="signinstead">
-          <div onClick={goToLogin} className="abc">
+          <div  className="abc"> 
             Sign in instead
           </div>
 
