@@ -1,0 +1,196 @@
+.signupcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 52vw;
+  height: 95vh;
+  margin: auto;
+  margin-top: 1.2%;
+  border-radius: 10px;
+  padding-left: 40px;
+  padding-right: 10px;
+  
+}
+
+.childcontainer{
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+}
+
+.google1{
+  color: blue;
+  font-size: x-large;
+
+}
+
+.createnew{
+  font-size: large;
+
+}
+
+.username{
+  display: flex;
+  width: 100%;
+}
+
+.google1,.createnew,.inputbox1 {
+  margin-bottom: 3%;
+}
+
+.firstcontainer {
+  height: 80%;
+  width: 70%;
+  border: 1px,solid rgb(201, 55, 55);
+
+}
+
+.secondcontainer {
+  width: 30%;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: chartreuse;
+  
+}
+
+.inputbox1,
+.inputbox2 {
+  display: flex;
+  margin-top: 18px;
+}
+
+
+.inputtextfield2,
+.inputtextfield5 {
+  margin-left: 20px;
+  width: 100%;
+
+}
+
+.inputtextfield1,.inputtextfield4{
+  width: 100%;
+
+
+}
+
+
+.showpassword {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.signinstead {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0.1%;
+  margin-top: 7%;
+  color:blue;
+
+
+}
+
+.showpassword {
+  margin-top: 2%;
+}
+
+.check {
+  margin-left: -2.1%;
+}
+
+
+.lastname,.confirm,.password,.firstname{
+  width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+ 
+
+  .secondcontainer{
+    display: none;
+   
+}
+
+
+
+   .firstcontainer {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+
+
+
+    
+} 
+  .inputbox1,.inputbox2{
+    display: flex;
+    flex-direction: column; 
+}
+
+ .inputtextfield2,.inputtextfield5{
+    margin-top: 15px;
+    margin-left: -0.1px;
+    margin-bottom: 4px;
+}
+
+.inputtextfield1,.inputtextfield4{
+  margin-top: 8px;
+  margin-bottom: 4px;
+
+} 
+
+.createnew{
+  margin-left: -5.6%;
+}
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .secondcontainer{
+    display: none; 
+}
+.firstcontainer {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  border: none;
+
+  
+  
+} 
+.inputbox1,.inputbox2{
+  display: flex;
+  flex-direction: column; 
+  margin-left: -4.5%;
+}
+.inputtextfield3{
+  margin-left: -4.5%;
+}
+
+.inputtextfield2,.inputtextfield5{
+  margin-top: 15px;
+  margin-left: -0.1px;
+  margin-bottom: 4px;
+}
+
+.inputtextfield1,.inputtextfield4{
+margin-top: 8px;
+margin-bottom: 4px;
+
+}
+
+.lastname,.confirm,.password,.firstname,.username{
+ width: 90%;
+}
+  
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .firstcontainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      border: none;
+  }
+  .secondcontainer{
+      display: none;
+  }
+}

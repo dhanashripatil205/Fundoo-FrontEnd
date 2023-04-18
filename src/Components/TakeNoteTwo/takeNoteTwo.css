@@ -1,0 +1,36 @@
+.takenotetwoo {
+  width: 48vw;
+  height: 16vh;
+  margin: auto;
+    position: relative;
+    top: 30px;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid grey; */
+  border-radius: 10px;
+  background-color: aqua;
+}
+
+.text3 {
+  height: 6vh;
+  width: 48vw;
+  border-radius: 5px;
+  background: transparent;
+  border: none transparent;
+  font-size: medium;
+  font: bold;
+  outline: none;
+}
+
+.subcontainerNewSub {
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  font-size: medium;
+  font: bold;
+  display: flex;
+  color: gray;
+  justify-content: space-around;
+  align-items: end;
+  padding-top: 1%;
+}

@@ -1,0 +1,91 @@
+
+.takenote56 {
+  margin-top: 50px;
+  display: flex;
+  /* margin-left: 35%; */
+  margin: auto;
+  /* position: relative; */
+  /* top: 30px; */
+  border-radius: 10px;
+  /* border: 1px solid grey; */
+  /* align-items: center; */
+  flex-direction: row;
+
+}
+
+/* .text2 {
+  width: 100%;
+  padding: 15px;
+  background: transparent;
+  border: none transparent;
+  font-size: medium;
+  font: bold;
+  outline: none;
+  display: flex;
+  justify-content: end;
+} */
+
+/* .menu {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  width: 100%;
+  color: grey;
+  margin-left: 90px;
+} */
+
+
+.mainInput{
+  outline: none;
+  border: none;
+  margin-top: 2px;
+  margin-left: 2px;
+  height: 90%;
+  width: 100%;   
+}
+
+.InputNote2{ 
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-right: -100px; */
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: none transparent;
+  outline: none;
+  font-size: larger;
+  padding-top: 1%;
+  margin-left: 1%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: none transparent;
+  outline: none;
+  font-size: larger;
+  padding-top: 1%;
+  margin-left: 1%;
+}
+
+.InputNote1{
+  /* border: 1px solid black; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+.allIcons {
+  display: flex;
+  flex-direction: row;
+}
